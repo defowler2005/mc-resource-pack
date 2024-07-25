@@ -35,7 +35,6 @@
                 "brandish_spear": "animation.humanoid.brandish_spear",
                 "charging": "animation.humanoid.charging",
                 "attack.rotations": "animation.humanoid.attack.rotations",
-                "sneaking": "animation.humanoid.sneaking",
                 "bob": "animation.humanoid.bob",
                 "damage_nearby_mobs": "animation.humanoid.damage_nearby_mobs",
                 "bow_and_arrow": "animation.humanoid.bow_and_arrow",
@@ -65,9 +64,6 @@
                 },
                 {
                     "attack": "controller.animation.humanoid.attack"
-                },
-                {
-                    "sneaking": "controller.animation.humanoid.sneaking"
                 },
                 {
                     "bob": "controller.animation.humanoid.bob"
