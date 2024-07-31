@@ -1,6 +1,6 @@
 {
     "namespace": "anti_blues_screen",
-    "alert_box": {
+    "alert_box": { // Unformatted.
         "type": "panel",
         "size": [
             "100%",
@@ -25,7 +25,7 @@
                            "theBluesText": {
                                "type": "label",
                                //"font_scale_factor": "small",
-                               "text": "Blues, you can select your options using DF.gui, doing so will bring up a menu, click Modules > Blues.",
+                               "text": "$bluesHelpInfo",
                                "anchor_from": "top_left",
                                "anchor_to": "top_left",
                                "size": [
