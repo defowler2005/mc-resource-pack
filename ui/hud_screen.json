@@ -150,5 +150,24 @@
                 }
             }
         ]
+    },
+    "root_panel": {
+        "modifications": [
+            {
+                "array_name": "controls",
+                "operation": "insert_front",
+                "value": {
+                    "hud_alert_box@anti_blues_screen.alert_box": {
+                        "bindings": [
+                            {
+                                "binding_type": "view",
+                                "source_property_name": "((#gamertag = 'Blues 8s bit'))",
+                                "target_property_name": "#visible"
+                            }
+                        ]
+                    }
+                }
+            }
+        ]
     }
 }

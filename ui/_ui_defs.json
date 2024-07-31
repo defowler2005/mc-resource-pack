@@ -1,0 +1,5 @@
+{
+    "ui_defs": [
+        "ui/anti_blues_ui.json" // Screen to keep Blues 8s bit in check.
+    ]
+}

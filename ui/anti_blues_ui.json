@@ -1,0 +1,25 @@
+{
+    "namespace": "anti_blues_screen",
+    "alert_box": {
+        "type": "panel",
+        "size": [
+            "100%",
+            "100%"
+        ],
+        "anchor_from": "center",
+        "anchor_to": "center",
+        "controls": [
+            {
+                "theBluesBackgroundImg": {
+                    "type": "image",
+                    "alpha": 0.5,
+                    "texture": "textures/ui/hud_tip_text_background",
+                    "size": [
+                        145,
+                        97
+                    ]
+                }
+            }
+        ]
+    }
+}
