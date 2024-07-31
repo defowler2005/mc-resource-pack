@@ -6,8 +6,7 @@
             "materials": {
                 "default": "entity_alphatest",
                 "cape": "entity_alphatest",
-                "animated": "player_animated",
-                "spectator": "player_spectator"
+                "animated": "player_animated"
             },
             "textures": {
                 "default": "textures/entity/defowler2005.png"
