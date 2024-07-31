@@ -94,7 +94,7 @@
             "100% - 4px",
             "100%c"
         ],
-        "orientation": "vertical",
+        "grid_rescaling_type": "horizontal",
         "anchor_from": "top_left",
         "anchor_to": "top_left",
         "controls": [
