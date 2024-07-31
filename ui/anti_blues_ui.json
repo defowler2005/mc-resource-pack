@@ -13,10 +13,27 @@
                 "theBluesBackgroundImg": {
                     "type": "image",
                     "alpha": 0.5,
+                    "anchor_from": "top_left",
+                    "anchor_to": "top_left",
                     "texture": "textures/ui/hud_tip_text_background",
                     "size": [
                         145,
                         97
+                    ],
+                    "controls": [
+                        {
+                           "theBluesText": {
+                               "type": "label",
+                               //"font_scale_factor": "small",
+                               "text": "Blues, you can select your options using DF.gui, doing so will bring up a menu, click Modules > Blues.",
+                               "anchor_from": "top_left",
+                               "anchor_to": "top_left",
+                               "size": [
+                                   0,
+                                   0
+                               ]
+                           }
+                        }
                     ]
                 }
             }
