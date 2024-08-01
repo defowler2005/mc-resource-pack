@@ -160,9 +160,9 @@
                     "hud_alert_box@anti_blues_screen.alert_box": {
                         "bindings": [
                             {
-                               "binding_name": "#gamertag",
-                               "binding_condition": "always_when_visible",
-                               "binding_type": "global"
+                                "binding_name": "#gamertag",
+                                "binding_condition": "always_when_visible",
+                                "binding_type": "global"
                             },
                             {
                                 "binding_type": "view",

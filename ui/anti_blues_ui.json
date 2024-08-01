@@ -1,6 +1,6 @@
 {
     "namespace": "anti_blues_screen",
-    "alert_box": { // Unformatted.
+    "alert_box": {
         "type": "panel",
         "size": [
             "100%",
@@ -13,26 +13,30 @@
                 "theBluesBackgroundImg": {
                     "type": "image",
                     "alpha": 0.5,
-                    "anchor_from": "top_left",
-                    "anchor_to": "top_left",
+                    "anchor_from": "top_right",
+                    "anchor_to": "top_right",
                     "texture": "textures/ui/hud_tip_text_background",
                     "size": [
                         145,
                         97
                     ],
+                    "offset": [
+                        0,
+                        0
+                    ],
                     "controls": [
                         {
-                           "theBluesText": {
-                               "type": "label",
-                               //"font_scale_factor": "small",
-                               "text": "$bluesHelpInfo",
-                               "anchor_from": "top_left",
-                               "anchor_to": "top_left",
-                               "size": [
-                                   0,
-                                   0
-                               ]
-                           }
+                            "theBluesText": {
+                                "type": "label",
+                                //"font_scale_factor": "small",
+                                "text": "$bluesHelpInfo",
+                                "anchor_from": "top_left",
+                                "anchor_to": "top_left",
+                                "size": [
+                                    5,
+                                    3
+                                ]
+                            }
                         }
                     ]
                 }

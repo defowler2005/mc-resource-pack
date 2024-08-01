@@ -1,7 +1,3 @@
-/********************************************************
-+*   (c) Mojang. All rights reserved                       *
-+*   (c) Microsoft. All rights reserved.                   *
-+*********************************************************/
 {
     "namespace": "server_form",
     "third_party_server_screen@common.base_screen": {
@@ -17,8 +13,8 @@
     "main_screen_content": {
         "type": "panel",
         "size": [
-            0,
-            0
+            425,
+            290
         ],
         "controls": [
             {
@@ -35,14 +31,17 @@
     "long_form@common_dialogs.main_panel_no_buttons": {
         "$title_panel": "common_dialogs.standard_title_label",
         "$title_size": [
-            "100% - 14px",
-            10
+            "150% - 30px",
+            0
+        ],
+        "$title_offset": [
+            0,
+            12
         ],
         "size": [
-            225,
-            200
+            365,
+            255
         ],
-        "$text_name": "#title_text",
         "$title_text_binding_type": "none",
         "$child_control": "server_form.long_form_panel",
         "layer": 2
@@ -59,46 +58,6 @@
         "anchor_to": "top_left",
         "controls": [
             {
-                "scrolling_panel@common.scrolling_panel": {
-                    "anchor_to": "top_left",
-                    "anchor_from": "top_left",
-                    "$show_background": false,
-                    "size": [
-                        "100%",
-                        "100%"
-                    ],
-                    "$scrolling_content": "server_form.long_form_scrolling_content",
-                    "$scroll_size": [
-                        5,
-                        "100% - 4px"
-                    ],
-                    "$scrolling_pane_size": [
-                        "100% - 4px",
-                        "100% - 2px"
-                    ],
-                    "$scrolling_pane_offset": [
-                        2,
-                        0
-                    ],
-                    "$scroll_bar_right_padding_size": [
-                        0,
-                        0
-                    ]
-                }
-            }
-        ]
-    },
-    "long_form_scrolling_content": {
-        "type": "stack_panel",
-        "size": [
-            "100% - 4px",
-            "100%c"
-        ],
-        "grid_rescaling_type": "horizontal",
-        "anchor_from": "top_left",
-        "anchor_to": "top_left",
-        "controls": [
-            {
                 "label_offset_panel": {
                     "type": "panel",
                     "size": [
@@ -110,8 +69,8 @@
                             "main_label": {
                                 "type": "label",
                                 "offset": [
-                                    2,
-                                    2
+                                    -5,
+                                    17
                                 ],
                                 "color": "$main_header_text_color",
                                 "size": [
@@ -127,14 +86,44 @@
                 }
             },
             {
-                "padding": {
-                    "type": "panel",
+                "scrolling_panel@common.scrolling_panel": {
+                    "anchor_to": "top_left",
+                    "anchor_from": "top_left",
+                    "$show_background": false,
                     "size": [
                         "100%",
-                        4
+                        "100% - 9px"
+                    ],
+                    "$scrolling_content": "server_form.long_form_scrolling_content",
+                    "$scroll_size": [
+                        5,
+                        "100% - 8px"
+                    ],
+                    "$scrolling_pane_size": [
+                        "100% - 8px",
+                        "100% - 9px"
+                    ],
+                    "$scrolling_pane_offset": [
+                        2,
+                        5
+                    ],
+                    "$scroll_bar_right_padding_size": [
+                        0,
+                        0
                     ]
                 }
-            },
+            }
+        ]
+    },
+    "long_form_scrolling_content": {
+        "type": "stack_panel",
+        "size": [
+            "100% - 4px",
+            "100%c"
+        ],
+        "anchor_from": "top_left",
+        "anchor_to": "top_left",
+        "controls": [
             {
                 "wrapping_panel": {
                     "type": "panel",
@@ -148,6 +137,36 @@
                         }
                     ]
                 }
+            }
+        ]
+    },
+    "long_form_dynamic_buttons_panel": {
+        "type": "grid",
+        "grid_dimensions": [
+            3,
+            12
+        ],
+        "size": [
+            "100%",
+            "100%c"
+        ],
+        "offset": [
+            126,
+            2
+        ],
+        "grid_item_template": "server_form.dynamic_button",
+        "grid_rescaling_type": "horizontal",
+        "anchor_from": "top_right",
+        "anchor_to": "top_right",
+        "factory": {
+            "name": "buttons",
+            "control_name": "server_form.dynamic_button"
+        },
+        "collection_name": "form_buttons",
+        "bindings": [
+            {
+                "binding_name": "#form_button_length",
+                "binding_name_override": "#maximum_grid_items"
             }
         ]
     },
@@ -246,9 +265,6 @@
                         0,
                         33
                     ],
-                    //"$default_button_texture": "",
-                    //"$hover_button_texture": "",
-                    //"$border_visible": false,
                     "$button_text": "#form_button_text",
                     "$button_text_binding_type": "collection",
                     "$button_text_grid_collection_name": "form_buttons",
@@ -268,13 +284,13 @@
     },
     "custom_form@common_dialogs.main_panel_no_buttons": {
         "$title_panel": "common_dialogs.standard_title_label",
-        "$title_size": [
-            "100% - 14px",
-            10
+        "$title_offset": [
+            -183,
+            4
         ],
         "size": [
-            225,
-            200
+            425,
+            290
         ],
         "$text_name": "#title_text",
         "$title_text_binding_type": "none",
