@@ -69,8 +69,8 @@
                             "main_label": {
                                 "type": "label",
                                 "offset": [
-                                    -5,
-                                    17
+                                    2,
+                                    2
                                 ],
                                 "color": "$main_header_text_color",
                                 "size": [
@@ -150,14 +150,14 @@
             "100%",
             "100%c"
         ],
-        "offset": [
-            126,
-            2
-        ],
         "grid_item_template": "server_form.dynamic_button",
         "grid_rescaling_type": "horizontal",
         "anchor_from": "top_right",
         "anchor_to": "top_right",
+        "offset": [
+            126,
+            -5
+        ],
         "factory": {
             "name": "buttons",
             "control_name": "server_form.dynamic_button"
