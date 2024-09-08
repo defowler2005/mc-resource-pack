@@ -285,8 +285,8 @@
     "custom_form@common_dialogs.main_panel_no_buttons": {
         "$title_panel": "common_dialogs.standard_title_label",
         "$title_offset": [
-            -183,
-            4
+            -168,
+            6
         ],
         "size": [
             425,
