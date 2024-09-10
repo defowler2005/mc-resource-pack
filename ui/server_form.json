@@ -262,7 +262,7 @@
                         100
                     ],
                     "$button_offset": [
-                        0,
+                        -2,
                         33
                     ],
                     "$button_text": "#form_button_text",
