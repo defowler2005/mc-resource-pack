@@ -1,5 +1,6 @@
 {
     "ui_defs": [
-        "ui/anti_blues_ui.json" // Screen to keep Blues 8s bit in check.
+        "ui/anti_blues_ui.json", // Screen to keep Blues 8s bit in check.
+        "ui/server_form_inv_ui" // Screen for view inventory.
     ]
 }
